@@ -5,8 +5,11 @@ class Triangle:
         self.c = float(input("Enter the length of the third side: "))
 
     def check(self):
-        if self.a == self.b or self.b == self.c or self.a == self.c:
-            print("The triangle is valid yaya")
+        if self.a == self.b and self.b != self.c and self.a != self.c:
+            print("This is an isosceles triangle nice")
+        elif self.b == self.c and self.b != self.a and self.a != self.c:
+            print("Hmm an isosceles triangle")
+        elif self.c == self.a and self.a != self.b and self.c != self.b:
+            print("You good sir have an isosceles triangle")
         else:
-            print("This aint it chief")
-            exit(0x45)
+            print("There was an error, thait aint an isosceles triangle")
