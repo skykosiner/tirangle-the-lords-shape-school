@@ -12,4 +12,4 @@ class Triangle:
         elif self.c == self.a and self.a != self.b and self.c != self.b:
             print("You good sir have an isosceles triangle")
         else:
-            print("There was an error, thait aint an isosceles triangle")
+            print("There was an error, that aint an isosceles triangle")
